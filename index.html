@@ -88,12 +88,18 @@
   <!-- style-->
   <link rel="stylesheet" href="assets/css/app.min.css" />
 
+  <script>
+    if (localStorage.getItem("current-theme") === "dark") {
+      document.documentElement.classList.add("theme-dark");
+    }
+
+  </script>
 </head>
 
 <body class="hold-transition home">
   <!--header-->
-  <div class="header">
-    <div class="header__front"><a class="header__logo" href="index.html"><img src="assets/img/logo/adepermanaworld.svg"></a>
+  <header class="header">
+    <div class="header__front"><a class="header__logo" href="/"><img src="assets/img/logo/adepermanaworld.svg" alt="Ade Permana"><img src="assets/img/logo/adepermanaworld-white.svg" alt="Ade Permana"></a>
       <div class="header__frame">
         <!--burger-menu-->
         <button class="burger-menu js-burger-menu">
@@ -106,40 +112,42 @@
     </div>
     <div class="header__menu">
       <div class="header__main">
-        <div class="header__inner">
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link" href="#">About</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">Project</a>
-            </li>
-          </ul>
-          <div class="header__wrap">
-            <div class="header__body">
-              <div class="header__set">
-                <div class="header__set__lang">
-                  <a href="#">IN</a>
-                  <span></span>
-                  <a href="#">ID</a>
-                </div>
-                <div class="header__set__theme">
-                  <button class="btn js-theme-light" type="button">LIGHT</button>
-                  <span></span>
-                  <button class="btn js-theme-dark" type="button">DARK</button>
+        <div class="header__wrap">
+          <div class="header__inner">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="/">Home</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="/projects/">Project</a>
+              </li>
+            </ul>
+            <div class="header__box">
+              <div class="header__body">
+                <div class="header__set">
+                  <div class="header__set__lang">
+                    <a href="/">IN</a>
+                    <span></span>
+                    <a href="/">ID</a>
+                  </div>
+                  <div class="header__set__theme">
+                    <button class="btn js-theme-light" type="button">LIGHT</button>
+                    <span></span>
+                    <button class="btn js-theme-dark" type="button">DARK</button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="header__body">
-              <div class="header__socmed"><a href='#' target='_blank'>Insagram,</a><a href='#' target='_blank'>Linkedin,</a><a href='#' target='_blank'>Github</a></div>
+              <div class="header__body">
+                <div class="header__socmed"><a href='https://www.instagram.com/adepermana.world' target='_blank'>Insagram,</a><a href='https://www.linkedin.com/in/ade-permana20/' target='_blank'>Linkedin</a></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </header>
   <!--/.header-->
-  <div class="main-site main-site--hide js-main-site">
+  <main class="main-site main-site--hide js-main-site">
 
     <!--hero-->
     <div class="hero">
@@ -156,27 +164,26 @@
           </p>
           <br />
           <br />
-          <br />
 
-          <span><a href="wa.com">Devongs Programmer</a>, Web Developer (Sep 2024 - Present)</span>
+          <span><a href="https://wa.me/6281214249759?text=Halo%20saya%20mau%20tanya" target="_blank">Devongs Programmer</a>, Web Developer (Sep 2024 - Present)</span>
           <span>V3NET, Network ISP Technician (Okt 2023 - Mar 2024)</span>
-          <span><a href="" target="_blank">PT. Grand Principal Mandiri</a>, DC Infrastructure (Jun 2023 - Sep 2023)</span>
+          <span><a href="https://ptgrandprincipalmandiri.id/" target="_blank">PT. Grand Principal Mandiri</a>, DC Infrastructure (Jun 2023 - Sep 2023)</span>
           <span>V3NET, Network ISP Technician (Aug 2022 - Jun 2023)</span>
         </div>
       </div>
     </div>
     <!--/.hero-->
-  </div>
+  </main>
   <!--footer-->
-  <div class="footer">
+  <footer class="footer">
     <div class="footer__inner">
       <h6 class="footer__location">Kuningan, West Java, ID</h6>
       <p class="footer__copyright">
-        <a href="index.html">adepermana.world</a>
+        <a href="/">adepermana.world</a>
         &copy; 2026
       </p>
     </div>
-  </div>
+  </footer>
   <!--/.footer-->
 
 

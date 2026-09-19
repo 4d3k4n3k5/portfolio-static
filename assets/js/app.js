@@ -556,6 +556,11 @@ var Animation = function () {
         ScrollReveal().reveal(".accordion__body", handleRevealConfigInterval());
       }
     }
+    if ($(".projects").length) {
+      ScrollReveal().reveal(".projects__ttl", handleRevealConfig());
+      ScrollReveal().reveal(".projects__body", handleRevealConfig());
+      ScrollReveal().reveal(".category", handleRevealConfigInterval());
+    }
   };
 
   // - init
@@ -666,7 +671,6 @@ var Category = function () {
   };
   var handleClickCategory = function handleClickCategory() {
     $(".category__btn").on("click", function (e) {
-      console.info("testtt aja");
       var _this = $(e.currentTarget);
       var $parents = _this.parents(".projects");
       var $item = _this.parents(".category__item");
@@ -803,23 +807,22 @@ var Header = function () {
     $(":root").css("--vh", vh + "px");
   };
   var handleTheme = function handleTheme() {
-    var savedTheme = localStorage.getItem("current-theme");
-    if (savedTheme === "dark") {
-      $("body").removeClass("theme-light").addClass("theme-dark");
-    } else {
-      $("body").removeClass("theme-dark").addClass("theme-light");
-    }
+    var $html = $("html");
+    var setTheme = function setTheme(theme) {
+      $html.removeClass("theme-light theme-dark").addClass("theme-".concat(theme));
+      localStorage.setItem("current-theme", theme);
+    };
+    setTheme(localStorage.getItem("current-theme") === "dark" ? "dark" : "light");
     $(".js-theme-dark").on("click", function () {
-      if (!$("body").hasClass("theme-dark")) {
-        $("body").removeClass("theme-light").addClass("theme-dark");
-        localStorage.setItem("current-theme", "dark");
-      }
+      return setTheme("dark");
     });
     $(".js-theme-light").on("click", function () {
-      if (!$("body").hasClass("theme-light")) {
-        $("body").removeClass("theme-dark").addClass("theme-light");
-        localStorage.setItem("current-theme", "light");
-      }
+      return setTheme("light");
+    });
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        return $html.addClass("theme-ready");
+      });
     });
   };
 
@@ -877,12 +880,23 @@ var Projects = function () {
     });
   };
 
+  // - handleSet
+  var handleSet = function handleSet() {
+    $(".projects__panel").each(function (index, panel) {
+      $(panel).find(".projects__item").eq(0).addClass("projects__item--active").find(".projects__wrap").show();
+    });
+  };
+
   // - handleClick
   var handleClick = function handleClick() {
     $(".projects__item").on("click.projects", function (e) {
       var _this = $(e.currentTarget);
       _this.toggleClass("projects__item--active").find(".projects__wrap").slideToggle();
-      _this.siblings(".projects__item").removeClass("projects__item--active").find(".projects__wrap").slideUp();
+      // _this
+      //   .siblings(".projects__item")
+      //   .removeClass("projects__item--active")
+      //   .find(".projects__wrap")
+      //   .slideUp();
     });
   };
 
@@ -903,6 +917,7 @@ var Projects = function () {
     $(".projects__link .btn.btn--secondary").off("click.projects");
     if (mobile) {
       $(".projects__item").removeClass("projects__item--active").find(".projects__wrap").hide();
+      handleSet();
       handleClick();
       handleClickButton();
     } else {
