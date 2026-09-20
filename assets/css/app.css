@@ -1033,7 +1033,7 @@ h5 {
 
 h6 {
   font-size: 1.6rem;
-  line-height: 1.9rem;
+  line-height: 2.4rem;
   font-weight: 700;
 }
 
@@ -1295,7 +1295,7 @@ b {
   width: 100%;
   padding: 15px 16px;
   font-size: 1.6rem;
-  line-height: 1.9rem;
+  line-height: 2.4rem;
   color: #fff;
   text-align: left;
   -webkit-transition: all 0.3s ease;
@@ -1308,13 +1308,13 @@ b {
 @media only screen and (max-width: 991.98px) {
   .category__dropdown__btn {
     font-size: 1.4rem;
-    line-height: 1.68rem;
+    line-height: 2.1rem;
   }
 }
 @media only screen and (max-width: 767.98px) {
   .category__dropdown__btn {
     font-size: 1.2rem;
-    line-height: 1.44rem;
+    line-height: 1.8rem;
   }
 }
 .category__dropdown__btn::after {
@@ -1415,7 +1415,7 @@ b {
   position: relative;
   padding: 0;
   font-size: 1.6rem;
-  line-height: 1.9rem;
+  line-height: 2.4rem;
   opacity: 0.5;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1432,7 +1432,7 @@ b {
 @media only screen and (max-width: 991.98px) {
   .category__btn {
     font-size: 1.4rem;
-    line-height: 1.68rem;
+    line-height: 2.1rem;
     width: 100%;
     padding: 15px 16px;
     text-align: left;
@@ -1443,7 +1443,7 @@ b {
 @media only screen and (max-width: 767.98px) {
   .category__btn {
     font-size: 1.2rem;
-    line-height: 1.44rem;
+    line-height: 1.8rem;
   }
 }
 .category__btn::after {
@@ -1865,14 +1865,14 @@ b {
 @media only screen and (max-width: 991.98px) {
   .header__link {
     font-size: 1.6rem;
-    line-height: 1.9rem;
+    line-height: 2.4rem;
     line-height: 2.1rem;
   }
 }
 @media only screen and (max-width: 767.98px) {
   .header__link {
     font-size: 1.4rem;
-    line-height: 1.68rem;
+    line-height: 2.1rem;
   }
 }
 .header__link:hover::after {
@@ -1913,7 +1913,7 @@ b {
 .header__box a,
 .header__box button {
   font-size: 1.6rem;
-  line-height: 1.9rem;
+  line-height: 2.4rem;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1923,7 +1923,7 @@ b {
   .header__box a,
 .header__box button {
     font-size: 1.4rem;
-    line-height: 1.68rem;
+    line-height: 2.1rem;
     line-height: 1.6rem;
   }
 }
@@ -1931,7 +1931,7 @@ b {
   .header__box a,
 .header__box button {
     font-size: 1.2rem;
-    line-height: 1.44rem;
+    line-height: 1.8rem;
     line-height: 1.4rem;
   }
 }
@@ -2058,6 +2058,24 @@ b {
 .header__set__lang button:hover, .header__set__theme a:hover,
 .header__set__theme button:hover {
   color: #7a7a7a;
+}
+.lang-en .header__set__lang a:first-child, .theme-dark .lang-en .header__set__lang a:first-child, .lang-en .header__set__theme a:first-child, .theme-dark .lang-en .header__set__theme a:first-child {
+  color: #7a7a7a;
+}
+.lang-id .header__set__lang a:first-child, .lang-id .header__set__theme a:first-child {
+  color: #000;
+}
+.theme-dark .lang-id .header__set__lang a:first-child, .theme-dark .lang-id .header__set__theme a:first-child {
+  color: #fff;
+}
+.lang-id .header__set__lang a:last-child, .theme-dark .lang-id .header__set__lang a:last-child, .lang-id .header__set__theme a:last-child, .theme-dark .lang-id .header__set__theme a:last-child {
+  color: #7a7a7a;
+}
+.lang-en .header__set__lang a:last-child, .lang-en .header__set__theme a:last-child {
+  color: #000;
+}
+.theme-dark .lang-en .header__set__lang a:last-child, .theme-dark .lang-en .header__set__theme a:last-child {
+  color: #fff;
 }
 .header__set__lang button:first-child, .header__set__theme button:first-child {
   color: #7a7a7a;
@@ -2231,14 +2249,14 @@ b {
 @media only screen and (max-width: 991.98px) {
   .footer__btn, .footer__copyright, .footer__location, .footer__copyright a {
     font-size: 1.6rem;
-    line-height: 1.9rem;
+    line-height: 2.4rem;
     line-height: 1.6rem;
   }
 }
 @media only screen and (max-width: 767.98px) {
   .footer__btn, .footer__copyright, .footer__location, .footer__copyright a {
     font-size: 1.4rem;
-    line-height: 1.68rem;
+    line-height: 2.1rem;
     line-height: 1.4rem;
   }
 }
@@ -2345,7 +2363,7 @@ b {
 .hero__ttl a,
 .hero__ttl span {
   font-size: 1.6rem;
-  line-height: 1.9rem;
+  line-height: 2.4rem;
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -2360,7 +2378,7 @@ b {
 .hero__ttl a,
 .hero__ttl span {
     font-size: 1.4rem;
-    line-height: 1.68rem;
+    line-height: 2.1rem;
     max-width: initial;
   }
 }
@@ -2375,7 +2393,7 @@ b {
 .hero__ttl a,
 .hero__ttl span {
     font-size: 1.2rem;
-    line-height: 1.44rem;
+    line-height: 1.8rem;
   }
 }
 .hero__ttl span {
@@ -2683,7 +2701,7 @@ b {
   .projects__name {
     padding: 0 24px 0 0;
     font-size: 1.4rem;
-    line-height: 1.68rem;
+    line-height: 2.1rem;
   }
 }
 .projects__name span {
@@ -2735,7 +2753,7 @@ b {
   margin-bottom: 0;
   padding: 5px 10px;
   font-size: 1.4rem;
-  line-height: 1.68rem;
+  line-height: 2.1rem;
   line-height: 1.8rem;
   opacity: 0.6;
 }
@@ -2744,7 +2762,7 @@ b {
     display: none;
     padding: 0;
     font-size: 1.2rem;
-    line-height: 1.44rem;
+    line-height: 1.8rem;
   }
 }
 @media only screen and (max-width: 767.98px) {
@@ -2817,18 +2835,18 @@ b {
 }
 .projects__desc p {
   font-size: 1.6rem;
-  line-height: 1.9rem;
+  line-height: 2.4rem;
 }
 @media only screen and (max-width: 991.98px) {
   .projects__desc p {
     font-size: 1.4rem;
-    line-height: 1.68rem;
+    line-height: 2.1rem;
   }
 }
 @media only screen and (max-width: 767.98px) {
   .projects__desc p {
     font-size: 1.2rem;
-    line-height: 1.44rem;
+    line-height: 1.8rem;
   }
 }
 .projects__desc p:last-child {
@@ -2915,7 +2933,7 @@ b {
   position: relative;
   text-decoration: none;
   font-size: 1.6rem;
-  line-height: 1.9rem;
+  line-height: 2.4rem;
 }
 .projects__link::after {
   content: "";
@@ -2928,11 +2946,14 @@ b {
      -moz-transform-origin: left;
       -ms-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  -moz-transition: transform 0.3s ease, -moz-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease;
+  -webkit-transition: border-color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: border-color 0.3s ease, -webkit-transform 0.3s ease;
+  -moz-transition: transform 0.3s ease, border-color 0.3s ease, -moz-transform 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease;
+}
+.theme-dark .projects__link::after {
+  border-color: #fff;
 }
 .projects__link:hover::after {
   -webkit-transform: scaleX(0);
@@ -2947,13 +2968,13 @@ b {
 @media only screen and (max-width: 991.98px) {
   .projects__link {
     font-size: 1.4rem;
-    line-height: 1.68rem;
+    line-height: 2.1rem;
   }
 }
 @media only screen and (max-width: 991.98px) and (max-width: 767.98px) {
   .projects__link {
     font-size: 1.2rem;
-    line-height: 1.44rem;
+    line-height: 1.8rem;
   }
 }
 
