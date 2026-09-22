@@ -2860,7 +2860,7 @@ b {
   margin-top: 12px;
   padding: 0;
   font-size: 1.6rem;
-  line-height: 1.9rem;
+  line-height: 2.4rem;
   text-transform: capitalize;
   color: #000;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -2871,9 +2871,14 @@ b {
 }
 @media only screen and (max-width: 991.98px) {
   .projects__more {
-    font-size: 1.1rem;
-    line-height: 1.4rem;
-    letter-spacing: 0.22px;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .projects__more {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
   }
 }
 .projects__more::after {
@@ -2936,6 +2941,18 @@ b {
   text-decoration: none;
   font-size: 1.6rem;
   line-height: 2.4rem;
+}
+@media only screen and (max-width: 991.98px) {
+  .projects__link {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .projects__link {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
 }
 .projects__link::after {
   content: "";
