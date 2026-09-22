@@ -2693,6 +2693,8 @@ b {
       -ms-flex: 0 0 306px;
           flex: 0 0 306px;
   padding: 5px 10px;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
   font-weight: 400;
   font-weight: 500;
   margin-bottom: 0;
